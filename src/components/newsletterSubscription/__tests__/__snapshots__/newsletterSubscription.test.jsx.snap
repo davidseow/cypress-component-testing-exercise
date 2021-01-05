@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NewsletterSubscription/> should render 1`] = `
+<DocumentFragment>
+  <div
+    id="newsletter"
+  >
+    Newsletter
+  </div>
+</DocumentFragment>
+`;
