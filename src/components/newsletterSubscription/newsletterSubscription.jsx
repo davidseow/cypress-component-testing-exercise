@@ -1,5 +1,9 @@
 import React from "react";
 
+function handleFormSubmit(e) {
+  e.preventDefault();
+}
+
 const NewsletterSubscription = () => (
   <div id="newsletter">
     <h3>Newsletter subscription</h3>
@@ -8,16 +12,15 @@ const NewsletterSubscription = () => (
       weekly.
     </p>
     <div>
-      <form novalidate="">
+      <form noValidate="" onSubmit={handleFormSubmit}>
         <div>
-          <label for="newsletter-email"></label>
+          <label htmlFor="newsletter-email"></label>
           <input
             placeholder="Email address"
             name="newsletter-email"
             aria-invalid="false"
             type="email"
             id="newsletter-email"
-            value=""
           />
         </div>
         <button type="submit">Sign up</button>
